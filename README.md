@@ -14,11 +14,14 @@ Jeneratör mimarisi sayesinde uygulamanın bellek tüketimi (peak memory) dosya 
 * Zirve RAM Tüketimi (Peak): ~0.0210 MB
 
 ## Kullanım (CLI)
+
 Süreçler `typer` destekli CLI üzerinden dinamik YAML yapılandırmaları ile yönetilir.
+
 ```bash
 python main.py run --config pipeline.yaml
+```
 
-Desteklenen Bileşenler
-Source: CSV, JSONL, HTTP API
-Transform: Filter, Cast, Rename, Map, Validate
-Sink: CSV, JSONL, SQLite, Stdout
+## Desteklenen Bileşenler
+* **Source:** CSV, JSONL, HTTP API
+* **Transform:** Filter, Cast, Rename, Map, Validate
+* **Sink:** CSV, JSONL, SQLite, Stdout
