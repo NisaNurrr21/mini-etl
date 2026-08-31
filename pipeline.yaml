@@ -1,0 +1,15 @@
+source:
+  type: jsonl
+  path: test_veri.jsonl
+transforms:
+  - type: filter
+    condition: "yas > 18"
+  - type: cast
+    fields:
+      yas: int
+  - type: rename
+    mapping:
+      ad: isim
+sink:
+  type: csv
+  path: sonuc_dinamik.csv
